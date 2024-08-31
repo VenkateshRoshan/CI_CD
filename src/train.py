@@ -57,13 +57,3 @@ def train(model, X, Y, TEST_IMAGES , TEST_LABELS , optimizer, loss_fn, batch_siz
 
     return model, train_loss, test_loss
 
-TRAIN_IMAGES, TRAIN_LABELS, TEST_IMAGES, TEST_LABELS = LOAD()
-
-model, train_loss , test_loss = train(model, TRAIN_IMAGES, TRAIN_LABELS, TEST_IMAGES , TEST_LABELS , optimizer, loss_fn)
-
-torch.save(model.state_dict(), MODEL_NAME)
-
-plt.plot(train_loss)
-plt.plot(test_loss)
-plt.legend(['train loss', 'test loss'])
-plt.show()
