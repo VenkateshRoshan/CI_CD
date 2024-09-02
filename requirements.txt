@@ -1,6 +1,5 @@
 matplotlib==3.9.2
-numpy==1.24.3
-numpy==1.24.4
+numpy==1.24.4  # Use the desired version here
 opencv_python==4.10.0.82
 opencv_python_headless==4.10.0.84
 torch==2.3.1
